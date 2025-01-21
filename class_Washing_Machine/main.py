@@ -1,5 +1,5 @@
-from calss_Pult.washing_machine_ui import UiWashingMachine
-from calss_Pult.wahs_power_on import WashingMachine
+from class_Washing_Machine.washing_machine_ui import UiWashingMachine
+from class_Washing_Machine.wahs_power_on import WashingMachine
 
 
 

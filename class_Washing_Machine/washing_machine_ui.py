@@ -1,4 +1,5 @@
 
+
 from wahs_power_on import WashingMachine
 
 class UiWashingMachine:
@@ -8,7 +9,6 @@ class UiWashingMachine:
 
 
     def run(self):
-
 
         while True:
             print('WASHING MACHINE\n')
@@ -24,8 +24,6 @@ class UiWashingMachine:
                 break
             elif choice == 3:
                 print(self.core.select_mode(self.list_mode()))
-
-
             else:
                 break
 
