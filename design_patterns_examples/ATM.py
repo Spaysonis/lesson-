@@ -87,11 +87,3 @@ class ATM:
     def eject_card(self):
         self.state.eject_card(self)
 
-atm1 = ATM()
-atm1.select_operation('снять')
-atm1.insert_card()
-atm1.eject_card()
-atm1.enter_pin(123)
-atm1.enter_pin(1234)
-atm1.select_operation('снять деньги')
-atm1.eject_card()

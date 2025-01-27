@@ -42,12 +42,7 @@ class RemoveControl:
         self.device.set_chanel(chanel)
 
 
-lg = Tv()
-
-remove_tv = RemoveControl(lg)
 
 
-remove_tv.turn_on()
-remove_tv.set_chanel(12)
-remove_tv.turn_off()
+
 

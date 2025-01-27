@@ -8,7 +8,7 @@ class Pizza:
 
 
     def info_pizza(self):
-        return f'Пицца: {self.type_pizza}, Ингредиенты: {", ".join(self.ingredient)}'
+        print( f'Пицца: {self.type_pizza}, Ингредиенты: {", ".join(self.ingredient)}')
 
 
 
@@ -22,20 +22,11 @@ class FactoryPizza:
     def create_pizza(self, pizza_type):
         ingredient = self.pizza_recipes.get(pizza_type)
         if ingredient:
+            print(f'заказ на {pizza_type} сформирован')
             return Pizza(pizza_type, ingredient)
         else:
             raise ValueError(f"Unknown pizza type: {pizza_type}")
 
-try:
-    factory = FactoryPizza()
-    pizza = factory.create_pizza('Vegan')
-    pizza1 = factory.create_pizza('Mozzarella')
-    print(pizza1.info_pizza())
-    print(pizza.info_pizza())
-
-
-except ValueError as e:
-    print(f'error {e}')
 
 
 

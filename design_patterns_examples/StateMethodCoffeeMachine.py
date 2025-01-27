@@ -99,12 +99,3 @@ class CoffeeMachine:
         self.state.off_machine(self)
 
 
-lg = CoffeeMachine()
-lg.off()
-lg.start()
-lg.check_status()
-lg.check_status()
-lg.check_status()
-lg.check_status()
-lg.start()
-lg.start()
